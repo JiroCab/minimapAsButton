@@ -53,9 +53,9 @@ public class MMBMain extends Mod {
     public void rebuildSubButtons(){
         mbbTable.clear();
         mbbTable.reset();
-        mbbTable.defaults().left();
-        mbbTable.button(Icon.map, Styles.cleari, () -> ui.minimapfrag.toggle()).name("mbb-map").size(65f);
-        if(Core.settings.getBool("mbb-planet-map"))mbbTable.button(Icon.planet, Styles.cleari, () -> ui.planet.toggle()).name("mbb-planet").size(65f);
+        mbbTable.defaults().size(65f).left();
+        mbbTable.button(Icon.map, Styles.cleari, () -> ui.minimapfrag.toggle()).name("mbb-map");
+        if(Core.settings.getBool("mbb-planet-map") && state.isCampaign() && (!net.active() || net.server()))mbbTable.button(Icon.planet, Styles.cleari, () -> ui.planet.toggle()).name("mbb-planet");
     }
 
 
