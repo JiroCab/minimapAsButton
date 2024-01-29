@@ -1,4 +1,7 @@
-apply plugin: "java"
+plugins {
+    id 'java'
+    id("fr.xpdustry.toxopid") version "3.2.0"
+}
 
 version '1.0'
 
@@ -22,6 +25,13 @@ ext{
     //windows sucks
     isWindows = System.getProperty("os.name").toLowerCase().contains("windows")
     sdkRoot = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
+}
+
+import fr.xpdustry.toxopid.spec.ModPlatform
+toxopid {
+    compileVersion.set("$mindustryVersion")
+    runtimeVersion.set("$mindustryVersion")
+    platforms.add(ModPlatform.DESKTOP)
 }
 
 //java 8 backwards compatibility flag
@@ -76,7 +86,7 @@ jar{
     }
 
     from(rootDir){
-        include "mod.hjson"
+        include "mod.hjson", "icon.png"
     }
 
     from("assets/"){
