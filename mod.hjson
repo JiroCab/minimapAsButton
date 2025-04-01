@@ -1,5 +1,5 @@
 #the mod name as displayed in-game
-displayName: "Minimap as a button"
+displayName: "Minimap as a button + other buttons"
 
 #the internal name of your mod
 name: "minimapbutton"
@@ -11,10 +11,11 @@ author: "RushieWashie"
 main: "minimapbutton.MMBMain"
 
 #the mod description as seen in the mod dialog
-description: "Replaces the mini map display/frag for a simple button, for slightly better performance on mobile or something \n\n just turn off Minimap to enable mod \n also settings > game > to add a shortcut for the sector map "
+description: "Mobile UI QOL\n\nAdds Buttons for:\n-Mini Map\n-Planet Map\n-Resync\n-Select all units on screen\n\nAll this can be turned off/on in settings!"
+subtitle: "v1.1 mobile but slightly less pain"
 
 #the mod version
-version: 1.0
+version: 1.1
 
 #the minimum game build required to run this mod
 minGameVersion: 145
