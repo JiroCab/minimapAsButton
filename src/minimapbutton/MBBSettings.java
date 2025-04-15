@@ -15,14 +15,18 @@ public class MBBSettings{
 
             table.checkPref("mbb-mini-map", true);
             table.checkPref("mbb-planet-map", false);
-            table.checkPref("mbb-select-screen", false);
             table.checkPref("mbb-resync", false);
 
+            table.checkPref("mbb-select-screen", false);
+            table.checkPref("mbb-select-unit", false);
+            table.checkPref("mbb-select-factory", false);
+
+            table.checkPref("mbb-show-stats", true);
             table.sliderPref("mbb-side", 5, 0, 8, s -> bundle.get("mbb-side"+s));
             table.sliderPref("mbb-offset-x", 0, -offsetMinMax , offsetMinMax, String::valueOf);
             table.sliderPref("mbb-offset-y", 0, -offsetMinMax , offsetMinMax, String::valueOf);
-            table.checkPref("mbb-show-stats", true);
             table.sliderPref("mbb-size", 65, 0 , sizeMinMax, String::valueOf);
+            table.sliderPref("mhu-tab-style", 5, 0 , 9, s -> bundle.get("mhu-blockinfostyle-s" + s ));
         });
     }
 }

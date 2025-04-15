@@ -11,11 +11,11 @@ author: "RushieWashie"
 main: "minimapbutton.MMBMain"
 
 #the mod description as seen in the mod dialog
-description: "Mobile UI QOL\n\nAdds Buttons for:\n-Mini Map\n-Planet Map\n-Resync\n-Select all units on screen\n\nAll this can be turned off/on in settings!"
-subtitle: "v1.1 mobile but slightly less pain"
+description: "Mobile UI QOL\n\nAdds Buttons for:\n-Mini Map\n-Planet Map\n-Resync\n-Selecting Units/Factories across the screen/map!\n\nAll this can be turned off/on in settings!"
+subtitle: "v1.2  mobile but slightly less pain"
 
 #the mod version
-version: 1.1
+version: 1.2
 
 #the minimum game build required to run this mod
 minGameVersion: 145
